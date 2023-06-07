@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#434040"
+        android:id="@+id/home_tool_bar"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_height="wrap_content"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="Registration"
+            android:textColor="@color/white"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_below="@id/home_tool_bar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/card_view"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18dp"
+                android:id="@+id/tv_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18dp"
+                android:id="@+id/tv_email"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="18dp"
+                android:id="@+id/tv_gender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Date of Birth"
+                android:textSize="18dp"
+                android:id="@+id/tv_date"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@id/card_view"
+        android:layout_height="wrap_content">
+       <Button
+           android:layout_width="0dp"
+           android:backgroundTint="#434040"
+           android:layout_weight="1"
+           android:layout_margin="10dp"
+           android:layout_height="wrap_content"
+           android:text="Update"
+           android:textAllCaps="true"
+           android:textSize="20dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#434040"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textAllCaps="true"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
